@@ -4,9 +4,12 @@ obj/
 publish/
 publish-fd/
 
-# Inno Setup outputs
-installer/Output/
-installer/*.exe
+# Installer / packaging (not part of source)
+installer/
+*.iss
+*.isl
+installer-icon*.ico
+*.exe
 
 # Local .NET SDK (should not be committed)
 .dotnet/
