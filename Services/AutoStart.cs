@@ -1,5 +1,8 @@
 using Microsoft.Win32;
 
+// ============================================================
+// 用途：开机自启（注册表 Run 键）与首启提示标记（HKCU\Software\AudioSwitcher）管理。
+// ============================================================
 namespace AudioSwitcher.Services;
 
 /// <summary>

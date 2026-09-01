@@ -8,6 +8,10 @@ using System.Windows.Interop;
 using System.Windows.Media.Imaging;
 using ImageSource = System.Windows.Media.ImageSource;
 
+// ============================================================
+// 用途：应用与菜单图标生成——加载内嵌/外部图标并随主题单色着色，
+// 带缓存与运行时回退绘制扬声器造型。
+// ============================================================
 namespace AudioSwitcher.Services;
 
 /// <summary>

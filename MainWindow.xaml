@@ -1,3 +1,7 @@
+<!-- ============================================================
+// 用途：主设置窗口布局——标题栏、当前输出/输入卡片、左右设备列表
+//（已启用/未启用可折叠）、悬浮滚动条与开机自启开关。
+// ============================================================ -->
 <Window x:Class="AudioSwitcher.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"

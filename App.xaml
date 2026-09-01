@@ -1,3 +1,7 @@
+<!-- ============================================================
+// 用途：应用级资源字典——定义全局画刷（主题色/卡片/文字/切换开关）、
+// 托盘菜单样式、设备列表项样式、音量滑块与滚动条等控件模板。
+// ============================================================ -->
 <Application x:Class="AudioSwitcher.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"

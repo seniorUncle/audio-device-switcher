@@ -7,6 +7,9 @@ using MsgBox = System.Windows.MessageBox;
 
 namespace AudioSwitcher;
 
+// ============================================================
+// 用途：应用入口——单实例互斥、托盘服务初始化、设置窗口单例管理与异常日志。
+// ============================================================
 public partial class App : WinApp
 {
     private const string MutexName = @"Local\AudioSwitcher_SingleInstance";

@@ -11,6 +11,10 @@ using System.Windows.Media;
 using System.Windows.Threading;
 using AudioSwitcher.Audio;
 
+// ============================================================
+// 用途：托盘菜单服务——设备选择/音量调节/设置/退出菜单，
+// 负责菜单弹出定位、标签切换与点击外部自动收起。
+// ============================================================
 namespace AudioSwitcher.Services;
 
 /// <summary>

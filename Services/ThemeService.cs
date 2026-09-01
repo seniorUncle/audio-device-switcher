@@ -2,6 +2,10 @@ using System.Windows;
 using System.Windows.Media;
 using Microsoft.Win32;
 
+// ============================================================
+// 用途：界面主题服务——同步 Windows 深浅色与系统强调色，
+// 刷新应用画刷资源并广播主题变化事件。
+// ============================================================
 namespace AudioSwitcher.Services;
 
 /// <summary>

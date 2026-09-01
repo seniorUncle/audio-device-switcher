@@ -2,6 +2,9 @@ using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Interop;
 
+// ============================================================
+// 用途：原生系统托盘图标（Shell_NotifyIcon）封装，消息由宿主 WPF 窗口接收。
+// ============================================================
 namespace AudioSwitcher.Services;
 
 /// <summary>

@@ -4,6 +4,9 @@ using System.Windows;
 using System.Windows.Interop;
 using Microsoft.Win32;
 
+// ============================================================
+// 用途：窗口亚克力/毛玻璃背景与圆角——兼容 Win10 组合属性与 Win11 DWM 系统背景。
+// ============================================================
 namespace AudioSwitcher.Services;
 
 /// <summary>

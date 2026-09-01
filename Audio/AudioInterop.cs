@@ -1,5 +1,9 @@
 using System.Runtime.InteropServices;
 
+// ============================================================
+// 用途：Windows Core Audio（MMDevice / PolicyConfig）COM 接口、
+// 枚举、结构体的 P/Invoke 定义，供 AudioDeviceManager 调用。
+// ============================================================
 namespace AudioSwitcher.Audio;
 
 /// <summary>音频数据流方向（EDataFlow）。</summary>

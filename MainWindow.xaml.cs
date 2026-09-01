@@ -13,6 +13,10 @@ using MsgBox = System.Windows.MessageBox;
 
 namespace AudioSwitcher;
 
+// ============================================================
+// 用途：主设置窗口逻辑——设备列表展示、切换/启用禁用设备、
+// 开机自启、标题栏交互与设备列表展开收起动画。
+// ============================================================
 public partial class MainWindow : Window
 {
     private readonly AudioDeviceManager _audio;
