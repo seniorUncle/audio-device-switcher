@@ -1,0 +1,19 @@
+# .NET build outputs
+bin/
+obj/
+publish/
+publish-fd/
+
+# Inno Setup outputs
+installer/Output/
+installer/*.exe
+
+# Local .NET SDK (should not be committed)
+.dotnet/
+
+# VS / IDE
+.vs/
+*.user
+
+# Logs
+*.log

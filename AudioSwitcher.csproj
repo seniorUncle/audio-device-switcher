@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>AudioSwitcher</AssemblyName>
+    <RootNamespace>AudioSwitcher</RootNamespace>
+    <Version>1.0.0</Version>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <SatelliteResourceLanguages>zh-Hans</SatelliteResourceLanguages>
+  </PropertyGroup>
+
+  <!-- 移除与 WPF 类型冲突的全局隐式 using（System.Drawing/System.Windows.Forms 仅按需显式引用） -->
+  <ItemGroup>
+    <Using Remove="System.Drawing" />
+    <Using Remove="System.Windows.Forms" />
+  </ItemGroup>
+
+  <!-- 内嵌应用图标（托盘 + 窗口）与菜单音量图标 -->
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\app-icon.png" />
+    <EmbeddedResource Include="Assets\volume.png" />
+    <EmbeddedResource Include="Assets\volume-2.png" />
+    <EmbeddedResource Include="Assets\volume-3.png" />
+    <EmbeddedResource Include="Assets\microphone.png" />
+    <EmbeddedResource Include="Assets\microphone-off.png" />
+    <EmbeddedResource Include="Assets\windows-fill.png" />
+  </ItemGroup>
+
+  <!-- 单文件独立发布：dotnet publish -c Release -r win-x64 -->
+  <PropertyGroup>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <PublishTrimmed>false</PublishTrimmed>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+</Project>
